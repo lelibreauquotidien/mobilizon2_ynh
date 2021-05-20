@@ -1,7 +1,7 @@
-SOURCE_URL=url of app's source
-SOURCE_SUM=sha256 checksum
+SOURCE_URL=https://framagit.org/framasoft/mobilizon/-/package_files/249/download
+SOURCE_SUM=688cccb04794ca856e49945a5cc8b4d2b8e97b549260a68f130d84df12ea6605
 SOURCE_SUM_PRG=sha256sum
 SOURCE_FORMAT=tar.gz
 SOURCE_IN_SUBDIR=true
-SOURCE_FILENAME=
+SOURCE_FILENAME=mobilizon_1.1.3_amd64.tar.gz
 SOURCE_EXTRACT=true
