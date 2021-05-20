@@ -63,6 +63,14 @@
                     "fr": "Admin Password"
                 },
                 "example": "Choose a password"
+            },
+            {
+                "name": "description",
+                "type": "string",
+                "ask": {
+                    "en": "Choose the application description",
+                    "fr": "Choisissez la description de l'application"
+                }
             }
         ]
     }
