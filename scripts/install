@@ -124,6 +124,13 @@ ynh_script_progression --message="Configuring NGINX web server..." --time --weig
 # Create a dedicated NGINX config
 ynh_add_nginx_config
 
+#=================================================
+# ADD A CONFIGURATION
+#=================================================
+ynh_script_progression --message="Adding a configuration file..." --time --weight=1
+secret_key_base=$(ynh_string_random --length=63)
+secret_key=$(ynh_string_random --length=64)
+ynh_add_config --template="../conf/config.exs" --destination="/etc/mobilizon/config.exs"
 
 #=================================================
 # SPECIFIC SETUP
@@ -133,13 +140,6 @@ ynh_script_progression --message="Execute database operations... " --time --weig
 ynh_psql_execute_file_as_root --file=../conf/postgres.psql --database=$app 
 
 sudo -u $app $final_path/bin/mobilizon_ctl migrate
-#=================================================
-# ADD A CONFIGURATION
-#=================================================
-ynh_script_progression --message="Adding a configuration file..." --time --weight=1
-secret_key_base=$(ynh_string_random --length=63)
-secret_key=$(ynh_string_random --length=64)
-ynh_add_config --template="../conf/config.exs" --destination="/etc/mobilizon/config.exs"
 
 #=================================================
 # SETUP SYSTEMD
