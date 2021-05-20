@@ -132,7 +132,7 @@ ynh_script_progression --message="Execute database operations... " --time --weig
 
 ynh_psql_execute_file_as_root --file=../conf/postgres.psql --database=$app 
 
-sudo -u $app .$final_path/bin/mobilizon_ctl migrate
+sudo -u $app $final_path/bin/mobilizon_ctl migrate
 #=================================================
 # ADD A CONFIGURATION
 #=================================================
