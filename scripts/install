@@ -132,7 +132,8 @@ ynh_script_progression --message="Adding a configuration file..." --time --weigh
 secret_key_base=$(ynh_string_random --length=63)
 secret_key=$(ynh_string_random --length=64)
 ynh_add_config --template="../conf/config.exs" --destination="/etc/mobilizon/config.exs"
-
+chown -R mobilizon: /etc/mobilizon/config.exs
+chmod 644 /etc/mobilizon/config.exs
 #=================================================
 # SPECIFIC SETUP
 #=================================================
