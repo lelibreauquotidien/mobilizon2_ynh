@@ -23,7 +23,7 @@ ynh_abort_if_errors
 #=================================================
 # RETRIEVE ARGUMENTS FROM THE MANIFEST
 #=================================================
-
+name=$YNH_APP_ARG_NAME
 domain=$YNH_APP_ARG_DOMAIN
 description=$YNH_APP_ARG_DESCRIPTION
 admin=$YNH_APP_ARG_ADMIN

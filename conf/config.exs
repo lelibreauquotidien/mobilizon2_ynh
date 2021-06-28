@@ -15,7 +15,7 @@ config :mobilizon, Mobilizon.Web.Auth.Guardian,
   secret_key: "__SECRET_KEY__"
 
 config :mobilizon, :instance,
-  name: "gg",
+  name: "__NAME__",
   description: "__DESCRIPTION__",
   hostname: "__DOMAIN__",
   registrations_open: false,
