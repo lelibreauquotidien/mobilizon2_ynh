@@ -34,6 +34,10 @@ config :mobilizon, Mobilizon.Storage.Repo,
   port: "5432",
   pool_size: 10
 
+config :mobilizon,
+  Mobilizon.Service.Auth.Authenticator,
+  Mobilizon.Service.Auth.LDAPAuthenticator
+
 config :mobilizon, :ldap,
   enabled: true,
   host: "127.0.0.1",
