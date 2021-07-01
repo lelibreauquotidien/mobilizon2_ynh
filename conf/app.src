@@ -1,7 +1,7 @@
-SOURCE_URL=https://framagit.org/framasoft/mobilizon/-/package_files/267/download
-SOURCE_SUM=2867ab0164944543def754b86ad3cf519aa45f7d8cef8fe6dd2c04d7834a0268
+SOURCE_URL=https://packages.joinmobilizon.org/mobilizon_1.2.2_amd64.tar.gz
+SOURCE_SUM=d46dd04bbff3b184c26b65cb53d724a29d9840495e0a54acc43124079605fef5
 SOURCE_SUM_PRG=sha256sum
 SOURCE_FORMAT=tar.gz
 SOURCE_IN_SUBDIR=true
-SOURCE_FILENAME=mobilizon_1.1.4_amd64.tar.gz
+SOURCE_FILENAME=mobilizon_1.2.2_amd64.tar.gz
 SOURCE_EXTRACT=true
